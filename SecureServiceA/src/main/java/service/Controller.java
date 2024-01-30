@@ -7,24 +7,31 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
-	@Autowired
-	OAuth2RestTemplate restTemplate;
 
+  @Autowired
+  OAuth2RestTemplate restTemplate;
 
-	@GetMapping("/name")
-	public String getName() {
-		return "Frank Brown";
-	}
+  @GetMapping("/name")
+  public String getName() {
+    return "Frank Brown";
+  }
 
-	@GetMapping("/salary")
-	public String getSalary() {
-		return restTemplate.getForObject("http://localhost:8091/salary", String.class);
-	}
+  // Accessed By everyone
+  @GetMapping("/product_data")
+  public String getProductData() {
+    return "ProductData";
+  }
 
+  //Accessed by Employee and Manager
+  @GetMapping("/salary")
+  public String getSalary() {
+    return restTemplate.getForObject("http://localhost:8091/salary", String.class);
+  }
 
-	@GetMapping("/phone")
-	public String getPhone() {
-		return "645322899";
-	}
+  // Accessed by Manager
+  @GetMapping("/phone")
+  public String getPhone() {
+    return restTemplate.getForObject("http://localhost:8092/phone", String.class);
+  }
 }
 
