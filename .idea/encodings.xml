@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/AuthorizationServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SecureServiceA/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SecureServiceB/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SecureServiceC/src/main/java" charset="UTF-8" />
   </component>
 </project>

@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SecureServiceA (2)" />
-        <module name="SecureServiceA (1)" />
         <module name="AuthorizationServer" />
+        <module name="SecureServiceB" />
+        <module name="SecureServiceC" />
+        <module name="SecureServiceA" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SecureServiceA" target="11" />
+      <module name="SecureServiceA (1)" target="11" />
+      <module name="SecureServiceA (2)" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -21,6 +23,8 @@
       <module name="SecureServiceA" options="-parameters" />
       <module name="SecureServiceA (1)" options="-parameters" />
       <module name="SecureServiceA (2)" options="-parameters" />
+      <module name="SecureServiceB" options="-parameters" />
+      <module name="SecureServiceC" options="-parameters" />
     </option>
   </component>
 </project>
