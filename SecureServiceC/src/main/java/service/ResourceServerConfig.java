@@ -13,7 +13,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
   public void configure(HttpSecurity http) throws Exception {
     http
         .authorizeRequests()
-        .antMatchers("/salary").hasRole("MANAGER")
+        .antMatchers("/phone").hasAnyRole("EMPLOYEE", "MANAGER")
         .anyRequest()
         .authenticated();
   }

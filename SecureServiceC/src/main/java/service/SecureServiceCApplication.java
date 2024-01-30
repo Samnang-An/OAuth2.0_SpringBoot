@@ -8,10 +8,10 @@ import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.security.oauth2.client.resource.OAuth2ProtectedResourceDetails;
 
 @SpringBootApplication
-public class SecureServiceBApplication {
+public class SecureServiceCApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(SecureServiceBApplication.class, args);
+    SpringApplication.run(SecureServiceCApplication.class, args);
   }
 
   @Bean
