@@ -10,13 +10,13 @@ import org.springframework.security.oauth2.client.resource.OAuth2ProtectedResour
 @SpringBootApplication
 public class SecureServiceAApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SecureServiceAApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(SecureServiceAApplication.class, args);
+  }
 
-	@Bean
-	public OAuth2RestTemplate oAuth2RestTemplate(OAuth2ClientContext oAuth2ClientContext,
-			OAuth2ProtectedResourceDetails details) {
-		return new OAuth2RestTemplate(details, oAuth2ClientContext);
-	}
+  @Bean
+  public OAuth2RestTemplate oAuth2RestTemplate(OAuth2ClientContext oAuth2ClientContext,
+      OAuth2ProtectedResourceDetails details) {
+    return new OAuth2RestTemplate(details, oAuth2ClientContext);
+  }
 }

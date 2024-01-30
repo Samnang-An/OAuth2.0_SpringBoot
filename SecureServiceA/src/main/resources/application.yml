@@ -1,9 +1,9 @@
 server:
   port: 8090
-  
+
 security:
   oauth2:
-    client: 
+    client:
       accessTokenUri: http://localhost:8088/oauth/token
       userAuthorizationUri: http://localhost:8088/oauth/authorize
       clientId: client
